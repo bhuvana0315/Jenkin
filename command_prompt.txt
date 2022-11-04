@@ -1,0 +1,103 @@
+git commands link
+    https://dzone.com/articles/top-20-git-commands-with-examples
+
+    https://www.edureka.co/blog/git-tutorial/
+========================================
+Microsoft Windows [Version 10.0.19044.1889]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\>cd Devops
+
+E:\Devops>git config --global user.name "Bhuvana"
+
+E:\Devops>git config --global user.email "kbgayathri0915@gmail.com"
+
+E:\Devops>git init
+Initialized empty Git repository in E:/Devops/.git/
+
+E:\Devops>dir
+ Volume in drive E is study
+ Volume Serial Number is C4E6-7D76
+
+ Directory of E:\Devops
+
+22-09-2022  21:40    <DIR>          .
+22-09-2022  21:40    <DIR>          ..
+02-09-2022  13:58         9,957,671 project2.docx
+24-08-2022  18:49        21,851,329 Projects.docm
+24-08-2022  11:03        14,482,377 Projects.docx
+               3 File(s)     46,291,377 bytes
+               2 Dir(s)  252,344,909,824 bytes free
+
+E:\Devops>git clone https://github.com/bhuvana0315/ToDoList.git
+Cloning into 'ToDoList'...
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (8/8), done.
+
+E:\Devops>notepad Sample.java
+
+This will open notepad.....
+
+==========================================================
+C:\Users\USER>cd ToDOList
+The system cannot find the path specified.
+
+C:\Users\USER>cd ..
+
+C:\Users>cd ..
+
+C:\>cd ToDOList
+
+C:\ToDoList>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\ToDoList>notepad info.txt
+
+C:\ToDoList>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\ToDoList>git add info.txt
+
+C:\ToDoList>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   info.txt
+
+
+C:\ToDoList>git commit -m "this is test commit"
+[main b7a94ba] this is test commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 info.txt
+
+C:\ToDoList>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\ToDoList>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/bhuvana0315/ToDoList.git'
+
+C:\ToDoList>git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/bhuvana0315/ToDoList.git'
+
+C:\ToDoList>
